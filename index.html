@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Personl Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6df2d83c87.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills and Expertise</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>First Year Information Technology Student</p>
+        <h1>Hi! I'm <span>Cris Ed John Plata</span><br> from BSIT-1106</h1>
+    </div>
+</div>
+<!-- -------------about-------------- -->
+</div>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.JPG" class="user">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="descrip">I'm an aspiring web developer, and currently studying at the Batangas State University under the Colleges of Informatics and Computing Sciences. 
+                    I have a great interest on this field, and hopefully one day I will be sucessful</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                <p class="tab-links"onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Database Development</span><br>SQL Database Projects</li>
+                    <li><span>Web Development</span><br>Web App Development</li>
+                    <li><span>Graphic Designing</span><br>Graphic Planning</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>None</span><br>Projects Coming Soon!</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2009-2024</span><br>University of Batangas</li>
+                    <li><span>2004</span><br>Batangas State University</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------Skills and Expertise----------->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">Skills and Expertise</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>HTML,CSS & Javascript</h2>
+                <p>I utilize HTML to structure web content, providing the foundation for responsive and accessible websites. CSS brings design to life, ensuring layouts are visually appealing and adaptive to various devices. 
+                    With JavaScript, I add interactivity and dynamic functionality, creating engaging user experiences. Together, these technologies enable me to craft modern and effective web solution</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>SQL Database Handling</h2>
+                <p>I specialize in using SQL to manage and interact with databases efficiently. From designing schemas and writing complex queries to optimizing performance and ensuring data integrity, I handle databases to store, retrieve, 
+                    and manage information effectively. My skills include creating and managing relational database structures, executing CRUD operations, and ensuring seamless integration with applications.</p>
+                    <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-pen-nib"></i>
+                <h2>Frontend Designing</h2>
+                <p>I craft intuitive and visually appealing user interfaces that enhance the user experience. Combining modern design principles with tools like HTML, CSS, and JavaScript, 
+                    I create responsive and dynamic web designs tailored to user needs. My focus is on usability, accessibility, and delivering pixel-perfect layouts that look great on any device.
+
+                </p>
+                    <a href="#">Learn More</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--------Portfolio--------->
+<div id="portfolio">
+<div class="container">
+    <h1 class="sub-title">Projects</h1>
+    <div class="projects-list">
+        <div class="projects">
+            <img src="images/SQL.png" alt="">
+            <div class="layer">
+                <h3>DreamScanner</h3>
+                <p>A student attendance database system, as well as an access control security system  that was previously utilized in the University of Batangas - Senior High School</p>
+                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+ <a href="#" class="btn">See More</a>
+</div>
+</div>
+<!---------Contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>24-02986@g.batstate-u.edu.ph</p>
+            <p><i class="fa-solid fa-phone"></i>0945649865</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/cejp.plata.2024"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://x.com/plata_cj?t=pHOgx9AVW5zx0WOPLoi7pg&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/cejpplata/"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Cejp Resume.pdf" download class="btn btn 2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Hello, thank you for visiting!</span>
+        </div>
+
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright Cejp Plata BSIT-1106. <i class="fas fa-heart"></i></p>
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "200px";
+    }
+</script>
+<script>
+    const scriptURL = '<https://script.google.com/macros/s/AKfycbx5sKYKpzbl_DtRydjCJRKXcRKEoU47Um8Y9Pl43eRGJBwKc_vdGUHHIwRpdS6wDrHv/exec>'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        }
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
